@@ -1,0 +1,37 @@
+------------ Options -------------
+alpha: 0.7
+anormly_ratio: 0.5
+b1: 0.5
+b2: 0.999
+batch_size: 32
+beta: 1
+data_path: dataset/SMD
+dataset: SMD
+horizon: 1
+input_c: 38
+k: 3
+latent_dim: 100
+lr: 0.0001
+mode: test
+model_save_path: checkpoints
+num_epochs: 1
+output_c: 38
+pretrained_model: None
+seed: 1
+win_size: 6
+-------------- End ----------------
+(50000, 38) (50000, 38) (50000,)
+(50000, 38) (50000, 38) (50000,)
+checkpoints_SMD/model.ckpt
+
+{'FN': 394,
+ 'FP': 1512,
+ 'TN': 44640,
+ 'TP': 3448,
+ 'f1': 0.78345338384747,
+ 'latency': 10.999900000909083,
+ 'precision': 0.6951612889210458,
+ 'recall': 0.8974492428489087,
+ 'threshold': 0.5204799999999999}
+
+
